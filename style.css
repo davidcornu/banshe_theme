@@ -13,6 +13,7 @@ body {
 	font-family: Georgia, serif;
 	font-size: 14px;
 	color: #2d1a04;
+	min-width: 1030px;
 }
 
 a { color: #44AB89; text-decoration: none; }
