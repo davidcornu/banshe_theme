@@ -9,13 +9,6 @@
 				</a>
 			</h2>
 
-			<div class='page-meta'>
-				<?php if (get_post_meta($post->ID, 'author', true)): ?>
-					By <strong><?php echo get_post_meta($post->ID, 'author', true); ?></strong> |
-				<?php endif; ?>
-				<?php the_time("F jS"); ?>
-			</div>
-
 			<div class='page-body'>
 				<?php if (has_post_thumbnail()): ?>
 					<?php the_post_thumbnail('large'); ?>
