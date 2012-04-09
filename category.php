@@ -51,19 +51,23 @@
 	<?php else: ?>
 
 		<div class="no-results">
-			<p><strong><?php _e('There has been an error.'); ?></strong></p>
-			<p><?php _e('We apologize for any inconvenience, please hit back on your browser or use the search form below.'); ?></p>
-			<?php get_search_form(); /* outputs the default Wordpress search form */ ?>
-		</div><!--noResults-->
+			Sorry, nothing here yet.
+		</div>
 
 	<?php endif; ?>
 
 	<div class='clearfix'></div>
-</div><!-- articles -->
 
-<div class="previous-next">
-	<?php next_posts_link('&laquo; Older Entries') ?>
-	<?php previous_posts_link('Newer Entries &raquo;') ?>
-</div>
+	<div class="previous-next">
+		<div class='previous'>
+			<?php next_posts_link('&laquo; Older Entries') ?>
+		</div>
+		<div class='next'>
+			<?php previous_posts_link('Newer Entries &raquo;') ?>
+		</div>
+		<div class='clearfix'></div>
+	</div>
+
+</div><!-- articles -->
 
 <?php get_footer(); ?>

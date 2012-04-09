@@ -145,6 +145,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 40px auto;
 }
 
+.container .no-results {
+	padding: 100px 0;
+	font-size: 24px;
+	text-align: center;
+}
+
 .container .column {
 	width: 310px;
 	float: left;
