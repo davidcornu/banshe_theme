@@ -232,6 +232,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16px;
 }
 
+.container .article .article-body img,
+.container .page .page-body img {
+	border: 5px solid #cecece;
+	border: 5px solid rgba(0,0,0,0.1);
+}
+
 .container .article .previous-next,
 .container .articles .previous-next {
 	margin: 20px 0;
