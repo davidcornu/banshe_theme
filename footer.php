@@ -26,7 +26,7 @@
 					</td>
 					<td>
 						<a href="<?php bloginfo('rss2_url'); ?>" rel="nofollow">
-							<img width=30 height=30 src='<?php bloginfo('template_url'); ?>/images/rss.png'/>
+							<img width='30px' height='30px' src='<?php bloginfo('template_url'); ?>/images/rss.png'/>
 						</a>
 					</td>
 				</tr>

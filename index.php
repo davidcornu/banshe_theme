@@ -31,7 +31,7 @@
 									<?php if ( has_post_thumbnail() ): ?>
 										<?php the_post_thumbnail('medium'); ?>
 									<?php else: ?>
-										<img src='<?php bloginfo('template_url') ?>/images/placeholder.png'/>
+										<img width='300px' height='300px' src='<?php bloginfo('template_url') ?>/images/placeholder.png'/>
 									<?php endif; ?>
 								</div>
 							<?php else: ?>
