@@ -12,7 +12,7 @@
 	} elseif ( is_home() ) {
 		bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );
 	}  elseif ( is_404() ) {
-		echo 'Error 404 Not Found | '; bloginfo( 'name' );
+		echo '404 Not Found | '; bloginfo( 'name' );
 	} elseif ( is_single() ) {
 		wp_title('');
 	} else {
