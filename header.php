@@ -57,7 +57,7 @@
 		<ul class='navigation'>
 			<?php wp_list_categories(array('hide_empty' => false, 'exclude' => '1', 'title_li' => '')); ?>
 			<li class='pages'>
-				<a href='#'>About</a>
+				<a href='#'>About.</a>
 				<ul class='drop-down'>
 					<?php wp_list_pages(array('title_li' => '')); ?>
 				</ul>
