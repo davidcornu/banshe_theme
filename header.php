@@ -20,19 +20,42 @@
 	} ?></title>
 	<meta name="description" content="<?php wp_title(''); echo ' | '; bloginfo( 'description' ); ?>" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	
+	<!-- Favicon -->
 	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
+	
+	<!-- RSS -->
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
+	
+	<!-- jQuery & WordPress Tags -->
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
+	
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/blueprint/reset.css" type="text/css">
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/blueprint/typography.css" type="text/css">
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/blueprint/forms.css" type="text/css">
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/blueprint/ie.css" type="text/css">
 	<![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/style.css" type="text/css">
+	
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300' rel='stylesheet' type='text/css'>
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+  	var _gaq = _gaq || [];
+  	_gaq.push(['_setAccount', 'UA-30702131-1']);
+  	_gaq.push(['_trackPageview']);
+
+  	(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  	})();
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
